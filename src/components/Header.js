@@ -4,30 +4,30 @@ import styled from 'styled-components'
 function header() {
   return (
     <Nav>
-        <Logo src="/images/logo.svg" />
+        <Logo src="/images/logo.svg" alt="logo"/>
         <NavMenu>
             <a>
-                <img src="/images/home-icon.svg" />
+                <img src="/images/home-icon.svg"  alt="home"/>
                 <span>HOME</span>
             </a>
             <a>
-                <img src="/images/search-icon.svg" />
+                <img src="/images/search-icon.svg"  alt="search"/>
                 <span>SEARCH</span>
             </a>
             <a>
-                <img src="/images/watchlist-icon.svg" />
+                <img src="/images/watchlist-icon.svg"  alt="watchlist"/>
                 <span>WATCHLIST</span>
             </a>
             <a>
-                <img src="/images/original-icon.svg" />
+                <img src="/images/original-icon.svg" alt="originals" />
                 <span>ORIGINALS</span>
             </a>
             <a>
-                <img src="/images/movie-icon.svg" />
+                <img src="/images/movie-icon.svg" alt="movies"/>
                 <span>MOVIES</span>
             </a>
             <a>
-                <img src="/images/series-icon.svg" />
+                <img src="/images/series-icon.svg" alt="profile"/>
                 <span>SERIES</span>
             </a>
         </NavMenu>
@@ -48,8 +48,6 @@ const Nav = styled.nav`
 
 const Logo =  styled.img`
     width: 80px;
-
-
 `
 
 const NavMenu = styled.div`
@@ -57,6 +55,7 @@ const NavMenu = styled.div`
     flex: 1;
     margin-left: 20px;
     align-items: center;
+    overflow-x: hidden;
 
     a {
         display: flex;
